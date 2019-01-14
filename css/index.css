@@ -1,3 +1,254 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* RESETS AND GENERAL STYLING */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+h1 {
+	font-size: 5em;
+}
+
+h2 {
+	font-size: 1.3em;
+}
+
+
+/* DESKTOP-FIRST */
+
+
+body {
+	background: white;
+	max-width: 780px;
+	margin: 0 auto;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+}
+
+header nav {
+	width: 68.6%;
+	display: flex;
+	justify-content: space-between;
+}
+
+header nav a {
+	text-decoration: none;
+	color: #999;
+}
+
+header nav a:hover {
+	color: #555;
+}
+
+.herocontent {
+	display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+	text-align: center;
+    border-bottom: 1px solid black;
+    padding: 80px 0;
+    margin-bottom: 30px;
+}
+
+
+.herobutton, .button {
+	padding: 5px 42px 5px 42px;
+	border: 1px solid black;
+	text-decoration: none;
+	color: black;
+	background-color: #fefefe;
+}
+
+.herobutton:hover, .button {
+	background-color: #fff;
+	text-decoration: underline;
+}
+
+.herotext, .heroImage {
+	width: 40%;
+}
+
+
+.upper {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+.middle-img {
+	width: 100%;
+}
+.upper-section {
+	padding: 10px 10px 40px 0;
+	text-align: left;
+	width: 50%;
+}
+
+
+.lower {
+	margin: 0 0 20px 0;
+	padding-bottom: 45px;
+	border-bottom: 1px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.lower-section {
+    padding: 20px 20px 20px 0;
+	width: 33%;
+	text-align: left;
+	border-bottom: none;
+}
+
+
+.lower-section:last-child {
+	padding-right: 0;
+}
+
+address {
+	text-align: center;
+}
+
+.phone {
+	margin: 10px 0;
+}
+
+
+footer {
+	margin-top: 50px;
+	text-align: center;
+	text-decoration: underline;
+	font-weight: 500;
+	padding: 25px 0 100px 0;
+}
+
+
+/* TABLET */
+@media(min-width: 501px) and (max-width: 800px) {
+    body {
+        width: 85%;
+    }
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    header nav {
+        order: 1;
+        margin-top: 25px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .heroImage {
+        display: none;
+    }
+    .herotext {
+        width: 100%;
+    }
+}
+
+
+
+
+/* MOBILE */
+@media (max-width: 500px) {
+    body {
+        width: 90%;
+    }
+    header {
+        flex-direction: column;
+    }
+    header nav {
+        order: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        padding: 25px;
+    }
+
+    header nav a {
+        width: 100%;
+        text-align: center;
+        padding: 25px;
+        border: 1px solid #e3e3e3;
+    }
+    .heroImage {
+        display: none;
+    }
+    .herotext {
+        width: 80%;
+    }
+    .upper-section, .lower-section {
+        width: 100%;
+    }
+}

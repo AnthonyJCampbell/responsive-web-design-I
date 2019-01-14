@@ -75,7 +75,7 @@ h2 {
 
 body {
 	background: white;
-	max-width: 800px;
+	max-width: 780px;
 	margin: 0 auto;
 }
 
@@ -137,10 +137,6 @@ header nav a:hover {
 	margin-bottom: 20px;
 }
 
-.middlefig {
-    display: flex;
-}
-
 .middle-img {
 	width: 100%;
 }
@@ -191,9 +187,9 @@ footer {
 
 
 /* TABLET */
-@media(min-width: 501px) and (max-width: 900px) {
+@media(min-width: 501px) and (max-width: 800px) {
     body {
-        width: 80%;
+        width: 85%;
     }
     header {
         width: 100%;
@@ -222,8 +218,14 @@ footer {
 
 
 /* MOBILE */
-@media (max-width: 500) {
+@media (min-width: 500) {
     body {
-        width: 85%;
+        width: 90%;
+    }
+    header nav {
+        flex-direction: column;
+    }
+    .heroImage {
+        display: none;
     }
 }

@@ -73,46 +73,83 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+    
 }
 
 header nav {
+    margin-top: 45px;
     width: 610px;
     display: flex;
     justify-content: space-between;
 }
 
-.cta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header nav a {
+    text-decoration: none;
+    color: #B2B2B2;
 }
 
-.cta-text {
-    
+header .logo {
+    margin: 28px 0 0 91px;
+}
+
+
+.cta {
     display: flex;
+    margin-top: 72px;
+    justify-content: flex-end;
+}
+
+.cta .cta-text {
+    font-size: 72px;
+    display: flex;
+    letter-spacing: 5px;
     align-items: center;
-    flex-direction: column;
+    flex-flow: column;
     text-align: center;
+    justify-content: center;
+    margin: 0 82px 0 0;
+}
+
+.cta .cta-text button {
+    border: 1px double black;
+    font-size: 16px;
+    background: white;
+    width: 170px;
+    height: 32px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+    background: black;
+    color: white;
+}
+
+.main-content {
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    font-size: 16px;
+    line-height: 18px;
+ }
+
+
+.main-content .middle-img {
+    display: block;
+    margin: 30px auto;
 }
 
 .top-content, .bottom-content {
     display: flex;
-    justify-content: space-between;
 }
 
-.text-content {
-    
+.main-content .bottom-content p {
+    padding-right: 20px;
 }
 
-.main-content .middle-img {
-    
-}
-
-.bottom-content .text-content {
-    
+.contact p {
+    margin: 15px 0;
 }
 
 footer {
@@ -142,12 +179,21 @@ footer {
     .cta {
         justify-content: center;
     }
-     .cta img {
+    .cta .cta-text {
+        margin: 0;
+    }
+    .cta img {
          display: none;
-     }
-     .main-content .middle-img {
+    }
+    .main-content .middle-img {
         width: 100%;
-     }
+    }
+    .text-content {
+        margin: 0 10px;
+    }
+    .contact {
+        margin: 0 30px;
+    }
 }
 
 /* PHONE */
@@ -166,15 +212,30 @@ footer {
         width: 100%;
         text-align: center;
         border-bottom: 1px solid gray;
+        padding: 20px 0;
+        font-size: 20px;
     }
     header nav a:first-child {
         border-top: 1px solid gray;
     }
+    header nav a:hover {
+        background: gray;
+    }
+    header .logo {
+        margin: 20px 0;
+    }
+
     .cta {
         margin-top: 50px;
         flex-flow: column;
         align-items: center;
     }
+
+    .cta img {
+        max-width: 80%;
+        /* What use does this have, as opposed to setting it to 100%? */
+    }
+
     .main-content .top-content {
         justify-content: space-around;
         flex-direction: column;

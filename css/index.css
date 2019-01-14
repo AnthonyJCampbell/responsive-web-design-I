@@ -246,5 +246,12 @@ footer {
         align-content: space-between;
         height: 440px;;
     }
+    .text-content {
+        margin: 0;
+    }
+
+    .contact {
+        margin: 20px;
+    }
 
 }

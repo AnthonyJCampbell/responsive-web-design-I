@@ -64,21 +64,176 @@ h1, h2, h3, h4, h5 {
 
 /* DESKTOP-FIRST */
 
+
 body {
-    width: 100%;
-    background: #f9f9f9;
-    display: flex;
-}
-.container {
-    width: 900px;
-    margin: 0 auto;
-    background: #f1f1f1;
-    display: flex;
-    flex-direction: column;
+	background: white;
+	max-width: 875px;
+	margin: 0 auto;
 }
 
 header {
-    display: flex;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+}
+
+header nav {
+	width: 68.6%;
+	display: flex;
+	justify-content: space-between;
+}
+
+header nav a {
+	text-decoration: none;
+	color: #999;
+}
+
+header nav a:hover {
+	color: #555;
+}
+
+.herocontent {
+    
+}
+
+.herocontent {
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+	padding-bottom: 55px;
+	text-align: center;
+	border-bottom: 1px solid black;
+	flex-wrap: wrap;
+	background: #fafafa;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+	/* For desktop: */
+	.herocontent {
+		flex-wrap: nowrap;
+		margin: 45px 0 30px 0;
+		background: white;
+	}
+}
+
+.heroImage {
+	margin-top: 40px;
+	order: -1;
+}
+
+@media only screen and (min-width: 768px) {
+	.heroImage {
+		order: 0;
+		margin-top: 0;
+	}
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.3em;
+}
+
+
+
+.herocontent h1 {
+	
+	font-size: 5em;
+}
+
+.herocontent a, .button {
+	padding: 5px 42px 5px 42px;
+	border: 1px solid black;
+	text-decoration: none;
+	color: black;
+	background-color: #fefefe;
+}
+
+.herocontent a:hover, .button {
+	background-color: #fff;
+	text-decoration: underline;
+}
+
+.herotext, .heroImage {
+	width: 50%;
+}
+
+.upper {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+
+.middle-img {
+	width: 100%;
+}
+
+.upper-section {
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+
+@media only screen and (min-width: 768px) {
+	.upper-section {
+		padding: 10px 10px 40px 0;
+		text-align: left;
+		width: 50%;
+	}
+}
+
+.lower {
+	margin: 0 0 20px 0;
+	padding-bottom: 45px;
+	border-bottom: 1px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.lower-section {
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+
+@media only screen and (min-width: 768px) {
+	.lower-section {
+		padding-right: 20px;
+		width: 33%;
+		text-align: left;
+		border-bottom: none;
+	}
+}
+
+.lower-section:last-child {
+	padding-right: 0;
+}
+
+address {
+	text-align: center;
+}
+
+.phone {
+	margin: 10px 0;
+}
+
+
+footer {
+	margin-top: 50px;
+	text-align: center;
+	text-decoration: underline;
+	font-weight: 500;
+	padding: 25px 0 100px 0;
 }
 
 
